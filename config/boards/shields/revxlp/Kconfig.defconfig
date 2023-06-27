@@ -4,6 +4,6 @@
 if SHIELD_REVXLP
 
 config ZMK_KEYBOARD_NAME
-    default "revxlp-lite"
+    default "revxlp"
 
 endif
