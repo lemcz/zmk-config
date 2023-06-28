@@ -8,6 +8,7 @@
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 
+#define DEFAULT_L 0
 #define NAV_L 1
 #define NUM_L 2
 #define SYM_L 3
@@ -41,8 +42,15 @@
 
     shift_combo {
       timeout-ms = <50>;
-      key-positions = <25 26>;
+      key-positions = <36 37>;
       bindings = <&kp LSHFT>;
+    };
+
+    colon_combo {
+      timeout-ms = <50>;
+      key-positions = <22 23>;
+      bindings = <&kp COLON>;
+      layers = <DEFAULT_L>;
     };
 
 	l_curly_bracket {
@@ -148,7 +156,7 @@
             label = "Fun";
             bindings = <
         &kp CAPS  &trans	&trans     &trans      &trans     &trans         &trans    &kp F7     &kp F8     &kp F9     &kp F12     &none
-        &none     &kp LGUI  &kp LALT   &kp LSHFT   &kp LCTRL  &trans         &trans    &kp F4     &kp F5     &kp F6     &kp F11     &none
+        &trans    &kp LGUI  &kp LALT   &kp LSHFT   &kp LCTRL  &trans         &trans    &kp F4     &kp F5     &kp F6     &kp F11     &none
         &none     &trans    &trans     &trans      &trans     &trans         &trans    &kp F1     &kp F2     &kp F3     &kp F10     &none
                                            &none   &trans     &trans         &trans    &trans     &none
             >;
