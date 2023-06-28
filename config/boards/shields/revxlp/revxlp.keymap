@@ -81,6 +81,20 @@
 	    layers = <NUM_L>;
 	};
 
+	less_than_combo {
+	    timeout-ms = <50>;
+        key-positions = <8 20>;
+        bindings = <&kp LT>;
+	    layers = <DEFAULT_L>;
+	};
+
+	greater_than_combo {
+	    timeout-ms = <50>;
+	    key-positions = <20 32>;
+	    bindings = <&kp GT>;
+	    layers = <DEFAULT_L>;
+	};
+
 	ques_mark_combo {
 	    timeout-ms = <50>;
             key-positions = <21 33>;
@@ -128,7 +142,7 @@
         &kp TAB  &trans     &trans     &trans      &trans          &trans       &none        &kp PG_UP    &kp UARW   &kp PG_DN   &none     &kp INS
         &none    &sk LGUI   &sk LALT   &sk LSHFT   &sk LCTRL       &trans       &kp HOME     &kp LARW     &kp DARW   &kp RARW    &kp BKSP  &none
         &none    &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)       &trans       &kp END      &none        &none      &none       &kp DEL   &kp GRAVE
-                                           &none  &trans          &trans       &trans    &trans  &none
+                                       &trans      &trans          &trans       &trans       &trans       &none
             >;
         };
 
