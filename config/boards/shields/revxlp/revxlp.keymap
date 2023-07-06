@@ -37,7 +37,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHIFTY";
             #binding-cells = <0>;
-            tapping-term-ms = <150>;
+            tapping-term-ms = <200>;
             bindings = <&kp LSHFT>, <&caps_word>;
         };
 
@@ -93,17 +93,17 @@
       layers = <DEFAULT_L>;
     };
 
-	l_curly_bracket {
+	brightness_down_combo {
 	    timeout-ms = <50>;
-            key-positions = <2 14>;
-            bindings = <&kp LS(LBKT)>;
+            key-positions = <3 15>;
+            bindings = <&kp C_BRI_DEC>;
 	    layers = <NUM_L>;
 	};
 
-	r_curly_bracket {
+	brightness_up_combo {
 	    timeout-ms = <50>;
             key-positions = <4 16>;
-            bindings = <&kp LS(RBKT)>;
+            bindings = <&kp C_BRI_INC>;
 	    layers = <NUM_L>;
 	};
 
