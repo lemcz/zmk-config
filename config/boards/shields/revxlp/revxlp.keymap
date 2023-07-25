@@ -180,10 +180,10 @@
         nav_layer {
             label = "Nav";
             bindings = <
-        &trans    &kp LG(Q)  &kp LG(W)  &trans      &trans          &kp LG(T)    &none        &kp PG_UP    &kp UARW   &kp PG_DN   &none     &kp INS
+        &trans    &kp LG(Q)  &kp LG(W)  &trans      &trans          &kp LG(T)    &none        &kp PG_UP    &kp UARW   &kp PG_DN   &kp DEL     &kp INS
         &trans    &kp LGUI   &kp LALT   &kp LSHFT   &kp LCTRL       &trans       &kp HOME     &kp LARW     &kp DARW   &kp RARW    &kp BKSP  &none
-        &trans    &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)       &trans       &kp END      &none        &none      &none       &kp DEL   &kp GRAVE
-                                        &trans       &trans         &kp ENTER    &trans       &trans       &none
+        &trans    &kp LG(Z)  &kp LG(X)  &kp LG(C)   &kp LG(V)       &trans       &kp END      &none        &none      &none       &kp ENTER   &kp GRAVE
+                                        &trans      &kp ENTER       &trans       &trans       &trans       &none
             >;
         };
 
