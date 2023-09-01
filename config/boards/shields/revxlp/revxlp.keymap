@@ -71,15 +71,6 @@
     combos {
         compatible = "zmk,combos";
 
-    /*
-     * unused
-    shift_combo {
-      timeout-ms = <50>;
-      key-positions = <36 37>;
-      bindings = <&kp LSHFT>;
-    };
-    */
-
     enter_combo {
       timeout-ms = <50>;
       key-positions = <37 38>;
@@ -88,7 +79,7 @@
 
     colon_combo {
       timeout-ms = <50>;
-      key-positions = <22 23>;
+      key-positions = <22 34>;
       bindings = <&kp COLON>;
       layers = <DEFAULT_L>;
     };
